@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Resume Builder</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Dynamic Resume Builder</h1>
+  <form id="resumeForm">
+    <fieldset>
+      <legend>Personal Information</legend>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      
+      <label for="email">Email:</label>
+      <input type="text" id="email" name="email" required>
+
+      <label for="phone">Phone:</label>
+      <input type="text" id="phone" name="phone" required>
+
+      <label for="adress">Adress:</label>
+      <input type="text" id="adress" name="adress" required>
+    </fieldset>
+    
+    <fieldset>
+      <legend>Education</legend>
+      <label for="education">Education:</label>
+      <textarea id="education" name="education" required></textarea>
+    </fieldset>
+    
+    <fieldset>
+      <legend>Work Experience</legend>
+      <label for="experience">Work Experience:</label>
+      <textarea id="experience" name="experience" required></textarea>
+    </fieldset>
+    
+    <fieldset>
+      <legend>Skills</legend>
+      <label for="skills">Skills:</label>
+      <textarea id="skills" name="skills" required></textarea>
+    </fieldset>
+
+    <fieldset>
+      <legend>Languages</legend>
+      <label for="languages">Languages:</label>
+      <textarea id="languages" name="languages" required></textarea>
+    </fieldset>
+
+    <fieldset>
+      <legend>Hobbies</legend>
+      <label for="languages">Hobbies:</label>
+      <textarea id="hobbies" name="hobbies" required></textarea>
+    </fieldset>
+
+
+
+    
+    <button type="button" id="generateResume">Generate Resume</button>
+  </form>
+  
+  <div id="resumeContainer" class="hidden">
+    <h2>Generated Resume</h2>
+    <div id="resumeOutput"></div>
+    <button id="editButton">Edit Details</button>
+  </div>
+  
+  <script src="script.js" type="module"></script>
+</body>
+</html>
